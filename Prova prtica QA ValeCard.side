@@ -1,0 +1,141 @@
+{
+  "id": "d5a66dc5-716c-432a-83ec-701d57b36d37",
+  "version": "2.0",
+  "name": "Prova prática QA ValeCard",
+  "url": "https://www.amazon.com.br",
+  "tests": [{
+    "id": "db094076-42f7-4a70-9f5e-6869f0cca5bd",
+    "name": "Login Amazon",
+    "commands": [{
+      "id": "a75c9bf9-3c5b-486f-9c77-8d1d205d5b6a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "219f40fe-41c9-486d-a5e7-9d9c3cf0610b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7de2853e-2ca7-4187-8c20-6df3712a0a56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-long-width",
+      "targets": [
+        ["css=.nav-long-width", "css:finder"],
+        ["xpath=//a[@id='nav-link-accountList']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Contas e Listas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d357601-656a-477f-86d2-3647456c5895",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69aa7b98-20af-40f0-976a-7596da31fc21",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "eversonholanda@gmail.com"
+    }, {
+      "id": "8b8c93a9-997d-4ef1-bf9d-397e114cb5ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=authportal-main-section",
+      "targets": [
+        ["id=authportal-main-section", "id"],
+        ["css=#authportal-main-section", "css:finder"],
+        ["xpath=//div[@id='authportal-main-section']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-center-section']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e0f8083-2d70-4868-a301-623b300a689c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-inner > #continue",
+      "targets": [
+        ["css=.a-button-inner > #continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='continue']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "128e79bb-1276-4ed0-bbc6-4743a531bff8",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f141ee9a-d0c8-4618-a781-31f310e1ab08",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "08006414"
+    }, {
+      "id": "a91a321f-6a57-4419-b8d5-db2c58a2f517",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ca940f01-7f5a-4929-a3d6-91d633bc3188",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["db094076-42f7-4a70-9f5e-6869f0cca5bd"]
+  }],
+  "urls": ["https://www.amazon.com.br/"],
+  "plugins": []
+}
